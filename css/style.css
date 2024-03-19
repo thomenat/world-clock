@@ -1,3 +1,63 @@
+body {
+    background-color: #f9f7fe;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
 h1 {
-    text-align: left;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.time {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.time small {
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 36px;
+}
+
+h2 {
+    margin: 5px 0 10px;
+    font-size: 28px;
+}
+
+.date {
+    opacity: 0.7;
+}
+
+#los-angeles {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
 }
