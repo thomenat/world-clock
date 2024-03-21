@@ -53,9 +53,9 @@ h2 {
     opacity: 0.7;
 }
 
-#los-angeles {
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-}
+.city:last-child {
+    border: none;
+  }
 
 .all-cities-div {
     padding-top: 15px;

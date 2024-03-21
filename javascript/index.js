@@ -26,7 +26,24 @@ rjDateElement.innerHTML = moment().format(`MMMM Do, YYYY`);
 rjTimeElement.innerHTML = `${rjTime.format("h:mm:ss")} 
 <small>${rjTime.format("A")}</small>`;
 
-}};
+}
+
+//Reykjavík
+let reykjavikElement = document.querySelector("#reykjavik");
+
+if (reykjavikElement) {
+let reykjavikDateElement = reykjavikElement.querySelector(".date");
+let reykjavikTimeElement = reykjavikElement.querySelector(".time");
+let reykjavikTime = moment().tz("Atlantic/Reykjavik");
+
+reykjavikDateElement.innerHTML = moment().format(`MMMM Do, YYYY`);
+reykjavikTimeElement.innerHTML = `${reykjavikTime.format("h:mm:ss")} 
+<small>${reykjavikTime.format("A")}</small>`;
+
+}
+
+
+};
 
 updateTime();
 setInterval(updateTime, 1000);
@@ -42,7 +59,7 @@ function updateCity(event) {
     let cityTime = moment().tz(cityTimeZone);
     let citiesElement = document.querySelector("#cities");
     citiesElement.innerHTML = `
-    <div class="city">
+    <div class="selectedCity">
     <div>
     <h2>${cityName}</h2>
     <div class="date">${cityTime.format("MMMM Do, YYYY")}</div>
